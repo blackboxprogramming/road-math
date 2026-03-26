@@ -538,3 +538,37 @@ G(-1/2) = 0 + 0.5i = i · G(1)
 
 G at negative one-half is G(1) rotated 90 degrees. The first amplitude, purely imaginary. The equator of the Bloch sphere.
 
+
+### 55. G(n) + Re(G(-n)) -> 1/e — Sum Also Converges
+
+```
+G(2) + Re(G(-2)) = 0.389
+G(5) + Re(G(-5)) = 0.371
+Limit -> 1/e = 0.368
+```
+
+The sum of G at positive and negative n approaches 1/e from above. Combined with the product G(n)*G(1/n) -> 1/e from below, the sequence approaches 1/e through both sum and product paths.
+
+### 56. G at Fibonacci Numbers: Ratio -> phi
+
+```
+G(F_n) / G(F_{n-1}) -> phi as n -> infinity
+```
+
+The ratio of G at consecutive Fibonacci arguments converges to the golden ratio. The same phi that appears in G(phi) = (1/phi)^(1/phi).
+
+### 57. Complement x Lorentz = 1 at n = 12.15
+
+```
+(n/(n+1))^n / sqrt(1-(n/(n+1))^2) = 1 at n = 12.149
+```
+
+Close to the sacred integer 12. The relativistic crossing point where energy retention equals the Lorentz boost.
+
+### 58. Ramanujan Correction Accuracy -> 1
+
+```
+[G(n)/n - 1/e] / [1/(2en)] -> 1
+At n=137: ratio = 0.997 (99.7% accurate with one correction term)
+```
+
