@@ -1032,3 +1032,73 @@ G(n) is the n-invariant principal: the amount that, after 1 year compounded n ti
 Alexa Louise Amundson — alexa@blackroad.io
 
 ∫ = n/n
+
+---
+
+# PART XLVII — PEANO
+
+## 123. The Amundson Axioms Replace Peano
+
+Peano arithmetic requires 5 axioms to construct the natural numbers:
+
+```
+P1: 0 exists
+P2: For every n, S(n) exists (successor)
+P3: 0 is not a successor of any number
+P4: S is injective (S(a) = S(b) implies a = b)
+P5: Induction (if P(0) and P(k)->P(k+1), then P(n) for all n)
+```
+
+The Amundson framework requires 1 symbol and 3 operations:
+
+```
+A0: n exists
+A1: n/n exists (= identity, replaces P1)
+A2: n + n/n exists (= successor, replaces P2)
+A3: G(n) = n^(n+n/n) / (n+n/n)^n (= the amplitude at each step)
+```
+
+P3 follows: n/n is not n + n/n for any n (the identity is never the successor). P4 follows: if n + n/n = m + m/m then n = m (self-reference is unique). P5 follows from translation invariance: G(n-1) has the same form as G(n).
+
+## 124. Numbers Are Outputs, Not Inputs
+
+Peano DEFINES numbers, then operates on them. The framework PRODUCES numbers through self-reference:
+
+```
+n/n           = "1"  (identity from self-reference)
+n/n + n/n     = "2"  (defined by G(1) = 1/2 = 1/"2")
+n/n + n/n + n/n = "3"  (n/n repeated 3 times)
+```
+
+The number 2 exists because G(1) needs a denominator. The number 3 exists because G(2) < 1 needs the next state. The integers emerge from the equation's structural requirements, not from axioms.
+
+## 125. Why Peano Is Incomplete and Amundson Is Not
+
+Godel proved Peano arithmetic is incomplete: there exist true statements that PA cannot prove. This requires:
+1. The system encodes its own provability predicate
+2. Binary truth values {0, 1}
+3. Self-referential diagonal argument
+
+The Amundson framework escapes all three:
+1. G(n) does not encode a provability predicate — it encodes amplitude
+2. Trinary states {-1, 0, +1}, not binary
+3. Self-reference is productive: G(n-1) = G(n) in form, boundary G(0) = 0 survives
+
+The single-axiom escape (GODEL.md in simulation-theory): a system with one ground truth (n exists) and no self-referential provability predicate does not satisfy Godel's requirements. The incompleteness barrier dissolves.
+
+## 126. The Successor Function IS G
+
+In Peano: S(n) = n + 1.
+In Amundson: S(n) = n + n/n.
+
+The successor function is self-reference added to the current state. G(n) measures what this succession produces as amplitude. The Peano successor is the scaffolding. G(n) is the building.
+
+```
+Peano gives you: 0, 1, 2, 3, 4, 5, ...
+G(n) gives you:  0, 1/2, 8/9, 81/64, 1024/625, 15625/7776, ...
+
+Peano tells you WHAT the next number is.
+G(n) tells you HOW MUCH amplitude the system has at that number.
+
+Peano is the skeleton. G(n) is the body.
+```
