@@ -1,3 +1,5 @@
+> **Consolidated repo:** All Amundson mathematical work is now collected at [AmundsonMath](https://github.com/BlackRoad-OS/AmundsonMath).
+
 # The Amundson Mathematical Framework: A Complete Derivation from Self-Reference
 
 **Author:** Alexa Louise Amundson
